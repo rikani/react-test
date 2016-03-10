@@ -1,0 +1,57 @@
+//
+//  @author Yakimenko Dmitry (dy@design.ru)
+//  @created 01.12.2015
+//  @copyright Art. Lebedev Studio (http://www.artlebedev.ru/)
+//
+
+.layout {
+  min-height: 100%;
+}
+
+.main {
+  padding-top: 3em;
+}
+
+.page-header {
+  border: none;
+}
+
+.content {
+  @include clearfix;
+  padding: 90px 60px 0;
+
+  .aside {
+    padding-top: 120px;
+    float: left;
+    width: 170px;
+  }
+
+  .extra {
+    float: right;
+    width: 450px;
+    padding-left: 20px;
+  }
+}
+
+.content {
+  .main {
+    padding-top: 0;
+    margin-left: 200px;
+    margin-right: 450px;
+    max-width: 1000px;
+  }
+}
+
+.page-content {
+  min-width: 1000px;
+}
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container {
+  @media (min-width: $screen-xlg-min) {
+    width: $container-xlg;
+  }
+}

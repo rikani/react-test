@@ -1,0 +1,70 @@
+$white: #fff;
+
+$black: #000;
+
+$red: rgb(255,0,0);
+
+$blue: #3ab7ff;
+
+$hover: rgb(21,124,243);
+
+$visited: rgb(153,81,207);
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg:               #080b16 !default;
+//** Global text color on `<body>`.
+$text-color:            $white !default;
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Padding between columns. Gets divided in half for the left and right.
+$grid-gutter-width:         30px !default;
+
+//== Typography
+//
+
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "ALS Gross Kunst", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-family-circle:       "Circle Regular", $font-family-sans-serif;
+$font-family-circle-light:       "Circle Light", $font-family-sans-serif;
+$font-family-circle-bold:       "Circle Bold", $font-family-sans-serif;
+
+$font-size-h1:            55px;
+$font-size-h2:            30px;
+$font-size-h3:            24px;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra large screen / Extra wide desktop
+//** Deprecated `$screen-lg` as of v3.0.1
+$screen-xlg:                  1600px !default;
+$screen-xlg-min:              $screen-xlg !default;
+//** Deprecated `$screen-lg-desktop` as of v3.0.1
+$screen-xlg-desktop:          $screen-xlg-min !default;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Extra large / Extra wide desktop
+$container-extra-large-desktop:      (1540px + $grid-gutter-width) !default;
+//** For `$screen-xlg-min` and up.
+$container-xlg:                 $container-extra-large-desktop !default;
+
+//** Background color used for `.table-hover`.
+$table-bg-hover:                transparent !default;

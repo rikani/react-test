@@ -1,0 +1,25 @@
+
+/**
+  @param {color} normal
+  @param {color} hover
+  @param {color} visited
+*/
+@mixin link-color($normal, $hover: $normal, $visited: $normal) {
+  color: $normal;
+  border-bottom-color: rgba($normal, .3);
+
+  &:visited {
+    color: $visited;
+    border-bottom-color: rgba($visited, .3);
+  }
+
+  &.not_visited:visited {
+    color: $normal;
+    border-bottom-color: rgba($normal, .3);
+  }
+
+  &.not_visited:hover, &:hover {
+    color: $hover;
+    border-bottom-color: rgba($hover, .3);
+  }
+}
