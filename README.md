@@ -20,7 +20,6 @@ $ gulp server
 $ gulp build
 ```
 Собирает app.bundle.js и кладот в папку `assets`
-```
 
-### Просмотреть Demo
+## Просмотреть Demo
 Просто открыть `index.html` в браузере.
